@@ -29,6 +29,6 @@ Our agent makes use of experience replay for model training. In order to achieve
 ![alt text](https://github.com/kwquan/Reacher/blob/main/deque.png)
 
 We do this by using deque. \
-Deque[double-ended queue] stores elements subject to a maximum length. In our code, we use a maxlen of 50000. This means that only the latest 50000 elements are kept. 
+Deque[double-ended queue] stores elements subject to a maximum length. In our code, we use a maxlen of 50000. This means that only the latest 50000 elements are kept. \ In the above image, suppose that our deque already contains 50000 elements. Adding a 50001st element will lead to dropping of the 1st element since only the latest 50000 elements are kept. 
 
 # Documentation
