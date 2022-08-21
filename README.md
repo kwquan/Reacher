@@ -16,8 +16,7 @@ Aim: \
 Observation space: \
 &emsp; 11 state variables
 
-Rewards: \
-&emsp;               
+Please refer to official documentation for more info              
 
 # Notes
 If skip training, please download the pre-trained weights[reacher_actor.pth & reacher_critic.pth] before running all sections[expect 'Train agent' & 'Save model weights'] \
@@ -58,5 +57,3 @@ There are 2 parts to updating weights. \
 2nd part requires next action selection given next state. This is achieved by passing next state variables to actor TARGET model. The next action output will be combined with the next state variables & passed to critic TARGET model to compute our next state-action value. 
 
 We then calculate target state-action value[refer to above]. Finally, mse loss is calculated using state-action value & target state-action value before doing back-propagation.
-
-# Documentation
