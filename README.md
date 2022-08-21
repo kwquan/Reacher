@@ -24,6 +24,8 @@ If skip training, please download the pre-trained weights[reacher_actor.pth & re
 In addition, please download memory.py & models.py before running the code
 
 # Memory
+
+### Storing experiences
 Our agent makes use of experience replay for model training. In order to achieve this, we must first store it's experiences. 
 
 ![alt text](https://github.com/kwquan/Reacher/blob/main/deque.png)
@@ -31,6 +33,7 @@ Our agent makes use of experience replay for model training. In order to achieve
 We do this by using deque. \
 Deque[double-ended queue] stores elements subject to a maximum length. In our code, we use a maxlen of 50000. This means that only the latest 50000 elements are kept. In the above image, suppose that our deque already contains 50000 elements. Adding a 50001st element will lead to dropping of the 1st element since only the latest 50000 elements are kept. 
 
+### Set experience as namedtuple
 ![alt text](https://github.com/kwquan/Reacher/blob/main/experience.png)
 
 We store experiences using a namedtuple called Experiece. This creates a tuple with the following variables as shown above. Respective values are assigned before the whole tuple is appended to the deque created above. 
@@ -39,6 +42,7 @@ We store experiences using a namedtuple called Experiece. This creates a tuple w
 
 Hence, memory buffer will look like the above
 
+### Sampling experiences
 ![alt text](https://github.com/kwquan/Reacher/blob/main/sample.png)
 
 If sampling is called, we iterate through the tuples & split them to their respective arrays. Note that all arrays will have the same size[batch_size] & each element is from a separate experience.
