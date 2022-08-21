@@ -35,5 +35,8 @@ Deque[double-ended queue] stores elements subject to a maximum length. In our co
 
 We store experiences using a namedtuple called Experiece. This creates a tuple with the following variables as shown above. Respective values are assigned before the whole tuple is appended to the deque created above. 
 
+![alt text](https://github.com/kwquan/Reacher/blob/main/buffer.png)
+
+Hence, memory buffer will look like the above
 
 # Documentation
