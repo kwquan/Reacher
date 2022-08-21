@@ -1,4 +1,4 @@
-# Reacher
+# Introduction
 This repo contains the code to solve the Reacher environment using Deep Deterministic Policy Gradient[DDPG]
 
 # Description
