@@ -46,4 +46,17 @@ Hence, memory buffer will look like the above
 ![alt text](https://github.com/kwquan/Reacher/blob/main/sample.png)
 
 If sampling is called, we iterate through the tuples & split them to their respective arrays. Note that all arrays will have the same size[batch_size] & each element is from a separate experience.
+
+# Weights Update
+
+### Process
+![alt text](https://github.com/kwquan/Reacher/blob/main/model.png)
+
+There are 2 parts to updating weights. \
+1st part requires action selection from the current state. This is achieved by passing state variables to actor model. The action output will be combined with the state variables & passed to critic model to compute our state-action value. 
+
+2nd part requires next action selection given next state. This is achieved by passing next state variables to actor TARGET model. The next action output will be combined with the next state variables & passed to critic TARGET model to compute our next state-action value. 
+
+We then calculate target state-action value[refer to above]. Finally, mse loss is calculated using state-action value & target state-action value before doing back-propagation.
+
 # Documentation
