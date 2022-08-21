@@ -39,4 +39,7 @@ We store experiences using a namedtuple called Experiece. This creates a tuple w
 
 Hence, memory buffer will look like the above
 
+![alt text](https://github.com/kwquan/Reacher/blob/main/sample.png)
+
+If sampling is called, we iterate through the tuples & split them to their respective arrays. Note that all arrays will have the same size[batch_size] & each element is from a separate experience.
 # Documentation
