@@ -24,7 +24,7 @@ If skip training, please download the pre-trained weights[reacher_actor.pth & re
 In addition, please download memory.py & models.py before running the code
 
 # Memory
-Our agent makes use of experience replay for model training. In order to achieve this, we must first store it's experiences. \
+Our agent makes use of experience replay for model training. In order to achieve this, we must first store it's experiences. 
 
 ![alt text](https://github.com/kwquan/Reacher/blob/main/deque.png)
 
