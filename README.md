@@ -10,7 +10,7 @@ I removed parts of it & added some of my Pong DQN code to make it simpler, along
 This is used on the latest Reacher version[V4]
 
 Aim: \
-&emsp; Reacher consists of a robotic arm controlled by our agent, whose aim is to reach the target[touching with it's tip] by applying torques on it's 2 joints 
+&emsp; Reacher consists of a robotic arm controlled by our agent, whose aim is to reach the target by applying torques on it's 2 joints 
 
 Observation space: \
 &emsp; 11 state variables
