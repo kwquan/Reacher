@@ -19,6 +19,7 @@ Rewards: \
 &emsp;               
 
 # Notes
-If skip training, please download the pre-trained weights[reacher_actor.pth & reacher_critic.pth] before running all sections[expect 'Train agent' & 'Save model weights'] 
+If skip training, please download the pre-trained weights[reacher_actor.pth & reacher_critic.pth] before running all sections[expect 'Train agent' & 'Save model weights'] \
+In addition, please download memory.py & models.py before running the code
 
 # Documentation
